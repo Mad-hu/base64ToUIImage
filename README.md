@@ -1,18 +1,7 @@
-//
-//  ViewController.swift
-//  base64ToUIImage
-//
-//  Created by yandonghu on 16/5/17.
-//  Copyright © 2016年 Mad-hu. All rights reserved.
-//
+# base64ToUIImage
+Tools use base64String to UIImage and UIImage to base64String,swift 3.0
 
-import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
         ///UIImage transformation base64String
         let img = UIImage(named:"circle")
         let base64StringForImg = imageToBase64String(img!)
@@ -32,8 +21,3 @@ class ViewController: UIViewController {
         self.view.addSubview(imgView2)
         
         let uiImageToBase64String = UIImage(named:"circle")?.getBase64String() //UIImage extension
-    }
-
-
-}
-
